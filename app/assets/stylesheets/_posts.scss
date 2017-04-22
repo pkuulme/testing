@@ -1,0 +1,120 @@
+.posts.index {
+  .card {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #181818;
+    height: 400px;
+    margin-bottom: 20px;
+    .card-topper {
+      border: none;
+      border-radius: 0;
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-block {
+      padding: 10px;
+      .btn-read {
+        background-color: #e8e8e8;
+        font-weight: 300;
+        border-radius: 0;
+        color: black;
+        &:hover {
+          background-color: #d8d8d8;
+        }
+      }
+      .card-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .published-date {
+        font-size: 0.8rem;
+        color: #787878;
+        font-weight: 300;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+      }
+      .card-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.posts.edit, .posts.new {
+  .card {
+    .card-block {
+      background-color: #f7f7f9; 
+    }
+    .card-title {
+      margin-bottom: 0;
+    }
+    .list-group-item {
+      padding: 10px;
+      border-left: 0;
+      border-right: 0;
+      input[type='text'], textarea {
+        font-size: 14px;
+      }
+      textarea {
+        height: 100px;
+      }
+      &:last-child {
+        .form-control {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 34em) {
+  .posts.index .card {
+    height: 440px;
+  }
+}
+
+/* Medium. Above 48em (768px) */
+@media screen and (min-width: 48em) {
+  .posts.index .card {
+    height: 420px;
+  }
+}
+
+/* Extra large. Above 75em (1200px) */
+@media screen and (min-width: 75em) {
+  .posts.index .card {
+    height: 415px;
+  }
+}
+
+.row {
+  text-align: center;
+    
+  } 
+
+.field {
+  padding: 0px;
+  margin-left: 10px;
+  margin: 2px;
+  font-weight: bold;
+    
+    }
+
+.actions {
+  margin-left: 50px;
+  padding-top: 0px;
+}
+
+.form-control {
+  width: 230px;
+  padding-right: 0px;
+  padding-left:  0px;
+}
+
+
